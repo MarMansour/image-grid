@@ -15,3 +15,67 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+img:nth-child(2) {
+  display: none;
+}
+
+img:nth-child(5) {
+  display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  img {
+    display: inline-block;
+    width: 50%;
+  }
+
+  img:first-child {
+    display: block;
+    width: 100%;
+  }
+
+  img:nth-child(2) {
+    display: inline-block;;
+  }
+
+  img:nth-child(5) {
+    display: inline-block;;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  img {
+    width: 33.3333%;
+  }
+
+  img:nth-child(5) {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  img:first-child {
+    width: 66.6666%
+  }
+
+  img:nth-child(5) {
+    display: inline-block;
+  }
+
+}
